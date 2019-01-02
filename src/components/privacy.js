@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
-
+import './styles/privacy.css';
+import logo from '../assets/function-earth-spinning.png';
 class Privacy extends Component {
   render() {
     return (
-      <div>
+      <div className='privacy'>
+        <img src={logo} className="privacy-logo" alt="logo" /> 
+        <h1>Function Earth Privacy Policy</h1>
         <p>We at Function Earth (“Function Earth,”, "FE", “we,” “us,” or “our”) created this privacy policy (“Privacy Policy”) because we know that you care about how information you provide to us is used and shared. This Privacy Policy relates to the information collection and use practices of Function Earth in connection with our website located at www.functionearth.com (the “Site”), and the Service.</p>
         <p>By visiting our Site and/or using our Service, you are agreeing to the terms of this Privacy Policy and the accompanying Terms of Use. Capitalized terms not defined in this Privacy Policy shall have the meaning set forth in our Terms of Use.</p>
         <h4 class="help-question">Information We Collect</h4>
@@ -21,7 +23,7 @@ class Privacy extends Component {
         <p>You may opt-out of the use of your information for tailored advertising purposes. To learn more about the use of this information or to choose not to have this information used by our third-party advertising partner by opting out, please visit the Network Advertising Initiative at <a href="http://www.networkadvertising.org/managing/opt_out.asp">http://www.networkadvertising.org/managing/opt_out.asp</a>. <strong>If you delete your Cookies, use a different browser, or buy a new computer, you will need to renew your opt-out choice.</strong></p>
         <h4 class="help-question">How We Use Your Information</h4>
         <p>We will use the Personal Information and Usage Information collected on this Site for the following purposes:</p>
-        <ul>
+        <ul className='privacy-list'>
           <li>To respond to your requests and to provide you with the Service;</li>
           <li>To respond to your inquiries and contact you about changes to this Site;</li>
           <li>To send you notices (for example, in the form of e-mails, mailings, and the like) regarding products or services you are receiving, and for billing and collection purposes;</li>

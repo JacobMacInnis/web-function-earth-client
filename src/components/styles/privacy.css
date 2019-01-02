@@ -1,0 +1,24 @@
+.privacy {
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5vmin 0;
+}
+.privacy-logo {
+  height: 10vmin;
+}
+.privacy p {
+  font-size: .5em;
+  padding-top: 2vmin;
+}
+.help-question {
+  font-size: .75em;
+  padding-top: 2vmin;
+}
+.privacy-list {
+  list-style: none;
+  padding-top: 2vmin;
+}
+.privacy a {
+  color: greenyellow;
+}
