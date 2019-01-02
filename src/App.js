@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import './App.css';
 
 import { FooterBar } from './components/footer-bar';
@@ -18,4 +18,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
