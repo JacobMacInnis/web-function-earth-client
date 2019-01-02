@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import logo from './assets/function-earth-spinning.png';
 import './App.css';
+
+import Privacy from './components/privacy';
 
 class App extends Component {
   render() {
@@ -14,6 +17,7 @@ class App extends Component {
         <div className="stars"></div>
         <div className="twinkling"></div>
         <div className="clouds"></div>
+        <Route exact path="/privacy"  component={Privacy} />
       </div>
     );
   }
