@@ -1,0 +1,23 @@
+.footer-bar {
+  color: white;
+  z-index: 1004;
+  padding-bottom: 2vmin;
+  max-width: 600px;
+  margin:  auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.footer-link {
+  color: greenyellow;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: rgb(153, 255, 0);
+  text-shadow: 0 0 5px #eeff00;
+}
+.footer-link:active {
+  color: rgb(123, 165, 60);
+}

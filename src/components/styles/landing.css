@@ -24,6 +24,9 @@
 .landing-link {
   color: #61dafb;
 }
+.privacy-link {
+  color: 'white';
+}
 
 @keyframes App-logo-spin {
   from {

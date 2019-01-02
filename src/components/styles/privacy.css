@@ -22,3 +22,10 @@
 .privacy a {
   color: greenyellow;
 }
+.privacy a:hover {
+  color: rgb(153, 255, 0);
+  text-shadow: 0 0 5px #eeff00;
+}
+.privacy a {
+  color: rgb(151, 197, 81);
+}

@@ -10,7 +10,6 @@ class Landing extends Component {
           <img src={logo} className="landing-logo" alt="logo" /> 
           <h1>COMING 2019</h1>
         </header>
-        
         <div className="stars"></div>
         <div className="twinkling"></div>
         <div className="clouds"></div>
