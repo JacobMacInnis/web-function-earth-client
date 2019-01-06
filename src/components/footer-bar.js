@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/footer-bar.css';
 
-export const FooterBar = () => (
+export const FooterBar = props => (
   <div className="footer-bar">
-    <div>
+    {props.location !== '/' ? <div>
       <Link to="/" className="btn footer-link">
       HOME
       </Link>
-    </div>
+    </div> : ''}
     <div>
       <Link to="/privacy" className="btn footer-link">
       Privacy Policy
       </Link>
     </div>
-</div>
+  </div>
 );
