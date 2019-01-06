@@ -1,9 +1,6 @@
 .footer-bar {
   z-index: 1004;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
+  padding-bottom: 2vmin;
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -11,6 +8,12 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-content: space-around;
+}
+.footer-landing {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
 }
 .footer-link {
   color: greenyellow;
