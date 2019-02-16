@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/privacy.css';
-import logo from '../assets/function-earth-spinning.png';
+import './Privacy.css';
+import logo from '../../assets/function-earth-spinning.png';
 
 export default props => (  
   <div className='privacy'>

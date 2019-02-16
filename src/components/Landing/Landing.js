@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../assets/function-earth-spinning.png';
-import './styles/landing.css';
+import logo from '../../assets/function-earth-spinning.png';
+import './Landing.css';
 
 class Landing extends Component {
   render() {

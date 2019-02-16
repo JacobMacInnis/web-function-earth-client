@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/footer-bar.css';
+import './FooterBar.css';
 
 export const FooterBar = props => (
   <div className={`footer-bar ${props.location === '/' ? 'footer-landing' : ''}`}>
