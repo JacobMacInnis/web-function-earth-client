@@ -13,9 +13,9 @@ class App extends Component {
       <div className="App">
         <Route exact path="/"  component={Landing} />
         <Route exact path="/privacy" component={Privacy} />
-        <FooterBar location={this.props.location.pathname}/>
         <Route exact path='/about' component={About} />
         <Route exact path='/support' component={Support} />
+        <FooterBar location={this.props.location.pathname}/>
       </div>
     );
   }

@@ -10,6 +10,14 @@ class Support extends Component {
           <img src={logo} className="landing-logo" alt="logo" /> 
           <h1>Support Function Earth</h1>
         </header>
+        <main>
+          <section>
+            <h2>Have an Issue? We've got your back</h2>
+            <form>
+              
+            </form>
+          </section>
+        </main>
       </div>
     );
   }
