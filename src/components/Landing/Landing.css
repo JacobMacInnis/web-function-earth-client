@@ -1,7 +1,19 @@
+
 .landing {
   background: 'black';
 }
-.landing-logo {
+.landing-globe-container {
+  max-width: 50vw;
+  opacity: .4;
+  
+}
+.landing-globe {
+  position: relative;
+  max-width: 100%;
+  z-index: -1;
+}
+
+/* .landing-logo {
   z-index: 1001;
   animation: App-logo-spin infinite 60s linear;
   height: 20vmin;
@@ -110,4 +122,4 @@ animation:move-twink-back 200s linear infinite;
 -o-animation:move-clouds-back 200s linear infinite;
 -webkit-animation:move-clouds-back 200s linear infinite;
 animation:move-clouds-back 200s linear infinite;
-}
+} */

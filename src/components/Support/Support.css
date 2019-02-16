@@ -1,8 +1,8 @@
 .support {
   background-color: #F9F9F0;
   color: #161511;
-  text-align: center;
-  height: 100vh;
+  /* text-align: center; */
+  height: 90vh;
 }
 .contact-form {
   background-color: #D87743;

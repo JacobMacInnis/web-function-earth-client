@@ -1,0 +1,65 @@
+.landing-nav-bar {
+  min-height: 80px;
+  max-height: 10vh;
+  background-color: #F9F9F0;
+  position: relative;
+  z-index: 1;
+}
+.landing-nav-bar-logo {
+  position: absolute;
+  max-height: 80%;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin: auto;
+}
+.landing-nav-bar-buttons {
+  list-style-type: none;
+}
+.landing-nav-bar-buttons li {
+  display: inline;
+  float: right;
+}
+.login-button, .signup-button {
+  text-decoration: none;
+  color: #F9F9F0;
+  padding: 10px;
+  border: 1px solid #F9F9F0;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-top: 15px;
+  margin-right: 20px;
+  opacity: .9;
+}
+.login-button {
+  background-color: #1A7137;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(26,113,55,1);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(26,113,55,1);
+  box-shadow: 3px 3px 7px 0px rgba(26,113,55,1);
+}
+.signup-button {
+  background-color: #36307B;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(54,48,123,1);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(54,48,123,1);
+  box-shadow: 3px 3px 7px 0px rgba(54,48,123,1);
+}
+.login-button:hover {
+  background-color: #26a651;
+}
+.signup-button:hover {
+  background-color: #4940a5;
+}
+.login-button:active {
+  background-color: #135328;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(19,83,40,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(19,83,40,1);
+  box-shadow: 0px 0px 7px 0px rgba(19,83,40,1);
+}
+.signup-button:active {
+  background-color: #302b6e;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(48,43,110,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(48,43,110,1);
+  box-shadow: 0px 0px 7px 0px rgba(48,43,110,1);
+}
