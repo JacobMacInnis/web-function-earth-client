@@ -1,3 +1,12 @@
 .support {
-  color: white;
+  background-color: #F9F9F0;
+  color: #161511;
+  text-align: center;
+  height: 100vh;
+}
+.contact-form {
+  background-color: #D87743;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
 }

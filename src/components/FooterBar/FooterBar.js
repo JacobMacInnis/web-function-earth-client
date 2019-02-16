@@ -9,10 +9,15 @@ export const FooterBar = props => (
       HOME
       </Link>
     </div> : ''}
-    <div>
+    {props.location !== '/support' ? <div>
+      <Link to="/support" className="btn footer-link">
+      Support
+      </Link>
+    </div> : ''}
+    {props.location !== '/privacy' ? <div>
       <Link to="/privacy" className="btn footer-link">
       Privacy Policy
       </Link>
-    </div>
+    </div> : ''}
   </div>
 );
