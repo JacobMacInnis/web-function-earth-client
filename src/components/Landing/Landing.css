@@ -1,6 +1,6 @@
-
 .landing {
   background: 'black';
+  text-align: center;
 }
 .landing-globe-container {
   max-width: 50vw;
@@ -11,6 +11,20 @@
   position: relative;
   max-width: 100%;
   z-index: -1;
+}
+.landing-header {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #F9F9F0;
+  font-family: var(--main-font-family)
+}
+.landing-title {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* .landing-logo {

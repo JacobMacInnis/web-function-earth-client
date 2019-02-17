@@ -10,9 +10,9 @@ export class LandingNavBar extends Component {
 			<div className="landing-nav-bar">
 				<div>
 
-					{/* <Link to="/dashboard"> */}
+					<Link to="/">
 						<img src={logo} className="landing-nav-bar-logo" alt="Think Programming Logo" />
-					{/* </Link> */}
+					</Link>
 					<ul className='landing-nav-bar-buttons'>
 						<li><Link to='/login' className='login-button'>
 							Login

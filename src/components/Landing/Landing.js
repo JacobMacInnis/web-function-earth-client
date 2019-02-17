@@ -17,6 +17,9 @@ class Landing extends Component {
           style={{transform: deg}}
           />
         </div>
+        <div className='landing-header'>
+          <h1 className='landing-title'>Function Earth</h1>
+        </div>
         {/* <header className="landing-header">
           <img src={logo} className="landing-logo" alt="logo" /> 
           <h1>COMING 2019</h1>
