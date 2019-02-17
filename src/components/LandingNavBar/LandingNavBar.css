@@ -1,17 +1,19 @@
 .landing-nav-bar {
-  min-height: 80px;
+  min-height: 90px;
   max-height: 10vh;
-  background-color: #F9F9F0;
+  background-image: linear-gradient(#F9F9F0 80%, black);
+  /* background-image: linear-gradient( rgba(249, 249, 240, .8), 'black'); */
+  /* background-color: rgba(249, 249, 240, .8); */
   position: relative;
   z-index: 1;
 }
 .landing-nav-bar-logo {
   position: absolute;
-  max-height: 80%;
+  max-height: 70%;
   top: 0;
   bottom: 0;
   left: 20px;
-  margin: auto;
+  margin: 8px;
 }
 .landing-nav-bar-buttons {
   list-style-type: none;
