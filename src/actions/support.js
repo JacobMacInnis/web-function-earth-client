@@ -6,9 +6,8 @@ export const newSupportRequest = () => ({
 });
 
 export const NEW_SUPPORT_SUCCESS = 'NEW_SUPPORT_SUCCESS';
-export const newSupportSuccess = res => ({
-    type: NEW_SUPPORT_SUCCESS,
-    res
+export const newSupportSuccess = () => ({
+    type: NEW_SUPPORT_SUCCESS
 });
 
 export const NEW_SUPPORT_ERROR = 'NEW_SUPPORT_ERROR';
@@ -17,9 +16,14 @@ export const newSupportError = error => ({
     error
 });
 
+export const END_SUPPORT_MESSAGING = 'END_SUPPORT_MESSAGING';
+export const endSupportMessaging = () => ({
+  type: END_SUPPORT_MESSAGING
+});
+
 export const newSupportMessage = entry => dispatch => {
   dispatch(newSupportRequest());
-  return fetch(`${REACT_APP_API_BASE_URL}/entries`, {
+  return fetch(`${REACT_APP_API_BASE_URL}/support`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -28,7 +32,7 @@ export const newSupportMessage = entry => dispatch => {
       })
       .then(res => res.json())
       .then((res) => {
-        dispatch(newSupportSuccess(res))
+        dispatch(newSupportSuccess())
       })
       .catch(err => {
         dispatch(newSupportError(err));

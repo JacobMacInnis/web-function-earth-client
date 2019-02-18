@@ -1,15 +1,14 @@
 .support {
-  background-color: #F9F9F0;
-  background-color: #5B5340;
-  /* color: #161511; */
+  background-color: rgb(91, 83, 64);
   color: #F9F9F0;
   text-align: center;
   height: 100%;
   font-family: var(--main-font-family)
 }
 .support-header {
-  /* color: #5B5340; */
+  margin: 0 auto;
   padding-top: 5vh;
+  max-width: 90vw;
 }
 .support-form {
   max-width: 650px;
@@ -109,11 +108,11 @@
 .support-message {
 }
 
-.support-button-container {
+/* .support-button-container {
   padding-bottom: 25px;
-}
+} */
 .support-button {
-  margin: 0 auto;
+  margin: 0 auto 25px;
   width: 140px;
   border-radius: 10px;
   color: #F9F9F0;
@@ -135,6 +134,41 @@
   box-shadow: 0px 0px 7px 0px rgba(48,43,110,1);
 }
 
+.support-success-popup, .support-failure-popup {
+  width: 300px;
+  min-height: 220px;
+  max-height: 20%;
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid #F9F9F0;
+  padding: 15px;
+  border-radius: 10px;
+}
+.support-success-popup {
+  background-color: #2f2b6eec;
+}
+.support-failure-popup {
+  background-color: #df4d4dec;
+}
+.support-success-popup h4, .support-failure-popup h4 {
+  margin-top: 10px;
+}
+.support-success-popup button, .support-failure-popup button {
+  margin: 10px 0 5px;
+  color: #161511;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color:  rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(80, 202, 121);
+}
+
 @media (min-width: 402px) {
   .support-radio-right {
     font-size: 1.5em;
@@ -142,5 +176,9 @@
   .checkbox {
     height: 1.5em;
     width: 1.5em;
+  }
+  .support-success-popup {
+    width: 365px;
+    height: 150px;
   }
 }

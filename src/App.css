@@ -1,6 +1,6 @@
 .App {
   /* text-align: center; */
-  background-color: #000000;
+  /* background-color: #000000; */
   animation: 6s ease-out 0s 1 onLoad;
 }
 @keyframes onLoad {

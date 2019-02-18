@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import logo from '../../assets/function-earth-spinning.png';
 import './Support.css';
 import LandingNavBar from '../LandingNavBar/LandingNavBar';
+import { connect } from 'react-redux';
+import { newSupportMessage, endSupportMessaging } from '../../actions/support';
 
 class Support extends Component {
   constructor(props) {
@@ -11,31 +13,81 @@ class Support extends Component {
       email: '',
       phone: '',
       service: '',
-      message: ''
+      message: '',
+      popUp: false,
+      success: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleRadioChange = this.handleRadioChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.updatePopUp = this.updatePopUp.bind(this);
+    this.closeSucessfulMessage = this.closeSucessfulMessage.bind(this);
   }
   handleChange(event) {
     const property = event.target.name;
     this.setState({[property]: event.target.value});
   }
   handleRadioChange(event) {
-    console.log('trying')
-    console.log(event.target.value, 'value');
     this.setState({service: event.target.value});
   }
   handleSubmit(event) {
+    if (this.state.fullName === '') {
+      alert('Full Name is required');
+    } else if (this.state.email === '') {
+      alert('Email is required');
+    } else if (this.state.service === '') {
+      alert('Service is required');
+    } else if (this.state.message === '') {
+      alert('Message is required');
+    } else {
+    const { fullName, email, service, phone, message } = this.state;
+    const support = {fullName, email, service, phone, message };
+    this.props.dispatch(newSupportMessage(support));
     event.preventDefault();
+    }
+  }
+  updatePopUp() {
+    this.setState({popUp:true, success: true});
+  }
+  componentDidUpdate(prevProps) {
+    if (this.props.success !== prevProps.success) {
+      if (this.props.success === true) {
+        this.updatePopUp();
+      }
+    }
+  }
+  closeSucessfulMessage() {
+    this.setState({
+      fullName: '',
+      email: '',
+      phone: '',
+      service: '',
+      message: '',
+      popUp: false,
+      success: false
+    })
+    this.props.dispatch(endSupportMessaging());
   }
   render() {
-    console.log(this.state.service)
+    let popUp = '';
+    if (this.state.popUp === true && this.state.success === true) {
+      popUp = <div className='support-success-popup'>
+        <h2>Success!</h2>
+        <h4>Your Support Message was successfully sent</h4>
+        <h4>Please allow up to 24 hours for a response</h4>
+        <button onClick={this.closeSucessfulMessage}>Close</button>
+        </div>;
+    } else if (this.state.popUp === true && this.state.success === false) {
+      popUp = <div className='support-failure-popup'>
+        <h4>Your Support Message not sent</h4>
+        <h4>{this.props.error.message}</h4>
+        <button onClick={this.closeSucessfulMessage}>Close</button>
+        </div>;
+    }
     return (
       <div className="support">
         <LandingNavBar />
         <header className="support-header">
-          {/* <img src={logo} className="landing-logo" alt="logo" />  */}
           <h1>Function Earth Support</h1>
         </header>
         <main className='support-form'>
@@ -45,8 +97,6 @@ class Support extends Component {
               <h2>We've got your back</h2>
             </div>
             <form className="support-form">
-              {/* <label className="support-form-title">Contact Us
-              </label> */}
               <div className='support-input-container'>
                 <div className="support-name-container" data-validate="Please Type Your Name">
                   <label className="support-name-label support-label">Full Name *</label>
@@ -117,15 +167,22 @@ class Support extends Component {
                     placeholder="Your message here..." required />
                 </div>
               </div>
-              <div className="support-button-container">
-                <div className='support-button'> Submit</div>
-              </div>
+              {/* <div className="support-button-container"> */}
+                <input type='submit' onClick={this.handleSubmit} value='Submit'
+                className='support-button'/> 
+              {/* </div> */}
             </form>
           </section>
         </main>
+        {this.state.popUp && popUp}
       </div>
     );
   }
 }
 
-export default Support;
+const mapStateToProps = state => ({
+  success: state.support.success,
+  error: state.support.error
+});
+
+export default connect(mapStateToProps)(Support);
