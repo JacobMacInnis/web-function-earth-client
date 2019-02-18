@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import globe from '../../assets/functionearth-globe.jpg';
 import './Landing.css';
 import LandingNavBar from '../LandingNavBar/LandingNavBar';
+import { FooterBar } from '../FooterBar/FooterBar';
 
 let deg = `rotate(${Math.floor(Math.random() * 360) + 1}deg)`;
   
@@ -20,6 +21,7 @@ class Landing extends Component {
         <div className='landing-header'>
           <h1 className='landing-title'>Function Earth</h1>
         </div>
+        <FooterBar location={this.props.location.pathname}/>
         {/* <header className="landing-header">
           <img src={logo} className="landing-logo" alt="logo" /> 
           <h1>COMING 2019</h1>

@@ -82,6 +82,7 @@
 }
 .support-radio-right:hover > .checkbox{
     background-color: #b9b8b3;
+    cursor: pointer;
 }
 .support-radio-right:active > .checkbox{
   background-color: white;
@@ -132,6 +133,7 @@
 }
 .support-button:hover {
   background-color: #4940a5;
+  cursor: pointer;
 }
 .support-button:active {
   background-color: #302b6e;

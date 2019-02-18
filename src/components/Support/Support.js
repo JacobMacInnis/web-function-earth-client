@@ -4,6 +4,7 @@ import './Support.css';
 import LandingNavBar from '../LandingNavBar/LandingNavBar';
 import { connect } from 'react-redux';
 import { newSupportMessage, endSupportMessaging } from '../../actions/support';
+import { FooterBar } from '../FooterBar/FooterBar';
 
 class Support extends Component {
   constructor(props) {
@@ -175,6 +176,7 @@ class Support extends Component {
           </section>
         </main>
         {this.state.popUp && popUp}
+        <FooterBar location={this.props.location.pathname}/>
       </div>
     );
   }

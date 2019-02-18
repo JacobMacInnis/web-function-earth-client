@@ -1,4 +1,5 @@
-.footer-bar {
+/* .footer-bar {
+  position: absolute;
   z-index: 1004;
   padding-bottom: 2vmin;
   max-width: 600px;
@@ -26,4 +27,4 @@
 }
 .footer-link:active {
   color: rgb(123, 165, 60);
-}
+} */

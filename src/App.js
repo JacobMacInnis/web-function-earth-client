@@ -15,7 +15,6 @@ class App extends Component {
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path='/about' component={About} />
         <Route exact path='/support' component={Support} />
-        <FooterBar location={this.props.location.pathname}/>
       </div>
     );
   }
