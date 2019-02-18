@@ -50,11 +50,15 @@
   max-width: 85%;
 }
 .support-radio-header {
-  font-size: 1.2em;
+  display: inline-block;
+  font-size: 1.3em;
+  margin-bottom: 10px;
 }
 .support-radio-flex {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 .support-radio-left-left {
   flex: 2;
@@ -73,6 +77,8 @@
   flex: 15;
   text-align: left;
   font-size: 1em;
+  display: table;
+  vertical-align: middle;
 }
 .support-radio-right:hover > .checkbox{
     background-color: #b9b8b3;
@@ -180,5 +186,8 @@
   .support-success-popup {
     width: 365px;
     height: 150px;
+  }
+  .support-radio-header {
+    font-size: 1.7em;
   }
 }
