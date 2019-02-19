@@ -19,16 +19,19 @@ class Landing extends Component {
           />
         </div>
         <div className='landing-header'>
-          <h1 className='landing-title'>Function Earth</h1>
+          <h1 className='landing-title'><span className='landing-title-first-letter'>F</span >unction <span className='landing-title-first-letter'>E</span>arth</h1>
+          <h2>Tracking Efforts To Preserve Earth and Humanity</h2>
         </div>
+        <section className='landing-registration-outer-container'>
+          <div className='landing-registration-inner-container'>
+            <label>Sign up for your free account.</label>
+            <form>
+              <label>Name:</label>
+              <input type='text'></input>
+            </form>
+          </div>
+        </section>
         <FooterBar location={this.props.location.pathname}/>
-        {/* <header className="landing-header">
-          <img src={logo} className="landing-logo" alt="logo" /> 
-          <h1>COMING 2019</h1>
-        </header>
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <div className="clouds"></div> */}
       </div>
     );
   }

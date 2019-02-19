@@ -1,3 +1,10 @@
+/*
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Fira Mono', monospace;
+font-family: 'Nunito', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Economica', sans-serif;
+font-family: 'Jura', sans-serif; */
 .landing {
   background: 'black';
   text-align: center;
@@ -19,12 +26,33 @@
   right: 0;
   margin: 0 auto;
   color: #F9F9F0;
-  font-family: var(--main-font-family)
+}
+.landing-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2.5em;
+}
+.landing-title-first-letter {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.2em;
 }
 .landing-title {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
+}
+.landing-registration-outer-container {
+  max-width: 90%;
+  display: inline-block;
+}
+.landing-registration-inner-container {
+  position: absolute;
+  display: inline-block;
+  background-color: #F9F9F0;
+  padding: 25px;
+  margin: 0 auto;
+  
+  left: 0;
+  right: 0;
 }
 
 /* .landing-logo {
